@@ -26,54 +26,61 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Sign in or create a free account to continue..."
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:layout_editor_absoluteX="52dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="300dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="64dp"
-        android:ems="10"
-        android:hint="E-mail"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/editTextNumberPassword"
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="510dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        android:layout_marginBottom="10dp"
-        app:layout_constraintVertical_bias="0.622" />
+        app:layout_constraintVertical_bias="1.0">
 
-    <EditText
-        android:id="@+id/editTextNumberPassword"
-        android:layout_width="300dp"
-        android:layout_height="44dp"
-        android:ems="10"
-        android:inputType="numberPassword"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
-        tools:layout_editor_absoluteY="353dp"
-        android:layout_marginBottom="10dp"/>
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="300dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="E-mail"
+            android:inputType="textPersonName"
+            android:textSize="20dp"
+            tools:ignore="TouchTargetSizeCheck" />
 
-    <Button
-        android:id="@+id/button"
-        android:onClick="login"
-        android:layout_width="294dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="24dp"
-        android:text="Sıgn ın "
-        android:drawableLeft="@drawable/key"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumberPassword"
-        tools:layout_editor_absoluteX="36dp" />
+        <EditText
+            android:id="@+id/editTextNumberPassword"
+            android:layout_width="300dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="36dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="numberPassword"
+            android:textSize="20dp"
+            tools:ignore="TouchTargetSizeCheck" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="138dp"
-        android:layout_height="40dp"
-        android:text="Create New Account"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/button"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.033" />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="294dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="36dp"
+            android:drawableLeft="@drawable/key"
+            android:onClick="login"
+            android:text="Sıgn ın " />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="138dp"
+            android:layout_height="40dp"
+            android:text="Create New Account"
+            android:textStyle="bold"
+            android:layout_marginStart="200dp"/>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
