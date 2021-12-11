@@ -11,6 +11,7 @@ public class User {
     private final String location;
     private final List<String> frequentlyLocations;
     private int point;
+
     //private Image profilePhoto;
 
     public User(String name, String surname, String mail,String phone, String birthday, String location,int point,  List<String> frequentlyLocations) {
