@@ -31,13 +31,13 @@ public class SignUpActivity extends AppCompatActivity {
         firebaseFirestore =  FirebaseFirestore.getInstance();;
         EditText mail = findViewById(R.id.editTextMail);
         EditText password = findViewById(R.id.editTextTextPassword);
-        Button goOn = findViewById(R.id.goOn);
+        Button goOn = findViewById(R.id.goOnNext);
         goOn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 createAccount(mail.getText().toString(), password.getText().toString());
-                Intent intent = new Intent(SignUpActivity.this, SignUpActivity.class);
+                Intent intent = new Intent(SignUpActivity.this, NameSurnameActivity.class);
                 startActivity(intent);
             }
         });

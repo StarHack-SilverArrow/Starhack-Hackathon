@@ -43,7 +43,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView">
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
+            android:id="@+id/username"
             android:layout_width="300dp"
             android:layout_height="44dp"
             android:layout_marginStart="40dp"
@@ -54,7 +54,7 @@
             tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName3"
+            android:id="@+id/usersurname"
             android:layout_width="300dp"
             android:layout_height="44dp"
             android:layout_marginStart="40dp"
