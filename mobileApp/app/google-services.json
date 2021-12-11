@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "534610872360",
+    "project_id": "starhack-silverarrow-7cb3c",
+    "storage_bucket": "starhack-silverarrow-7cb3c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:534610872360:android:8f080e55a0776302b1cd1d",
+        "android_client_info": {
+          "package_name": "com.example.silverarrowmobileapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "534610872360-qm5llv71um9l0f0h9koudjvq70nea6bh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsd-gUOK-HkJpyq4enG8EI_1l9EP4kckI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "534610872360-qm5llv71um9l0f0h9koudjvq70nea6bh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
