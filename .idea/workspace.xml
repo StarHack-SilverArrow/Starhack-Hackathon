@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d61745cc-8ae0-4bfd-85ff-619bc0317e8d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Starhack-Hackathon.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobileApp/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/mobileApp/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SilverAI/Face.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobileApp/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mobileApp/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobileApp/app/src/main/java/com/example/silverarrowmobileapp/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/mobileApp/app/src/main/java/com/example/silverarrowmobileapp/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobileApp/app/src/main/java/com/example/silverarrowmobileapp/SignUpActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/mobileApp/app/src/main/java/com/example/silverarrowmobileapp/SignUpActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobileApp/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mobileApp/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobileApp/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mobileApp/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobileApp/app/src/main/res/layout/activity_name_surname.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mobileApp/app/src/main/res/layout/activity_name_surname.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobileApp/app/src/main/res/layout/activity_sign_up.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mobileApp/app/src/main/res/layout/activity_sign_up.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,5 +53,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

@@ -29,18 +29,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.499">
 
+
         <EditText
-            android:id="@+id/editTextPhone"
+            android:id="@+id/editTextMail"
             android:layout_width="300dp"
             android:layout_height="44dp"
             android:layout_marginStart="40dp"
-            android:layout_marginTop="10dp"
             android:layout_marginBottom="20dp"
             android:ems="10"
-            android:hint="E-mail"
-            android:inputType="phone"
-            tools:ignore="TouchTargetSizeCheck" />
-
+            android:inputType="textPersonName"
+            android:hint="E-mail" />
 
         <EditText
             android:id="@+id/editTextTextPassword"
@@ -69,7 +67,7 @@
         app:layout_constraintVertical_bias="0.476" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/goOn"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
         android:background="@drawable/forwardbackground"

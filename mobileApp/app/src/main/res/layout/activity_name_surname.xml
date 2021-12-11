@@ -7,7 +7,7 @@
     tools:context=".NameSurnameActivity">
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/goOn"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
         android:background="@drawable/forwardbackground"
@@ -26,7 +26,7 @@
         android:layout_width="match_parent"
         android:layout_height="308dp"
         android:layout_marginBottom="280dp"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/goOn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"

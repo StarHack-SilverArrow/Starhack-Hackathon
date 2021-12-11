@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/buttonLogin"
+        android:id="@+id/buttoncontinue"
         android:layout_width="160dp"
         android:layout_height="40dp"
         android:layout_gravity="center_horizontal"
@@ -25,7 +25,6 @@
         android:background="@drawable/firstscreenbutton"
         android:drawableRight="@drawable/ic_baseline_arrow_circle_right_24"
         android:gravity="center"
-        android:onClick="login"
         android:text="Continue"
         android:textColor="@color/dpurple"
         android:textSize="14dp"
@@ -79,7 +78,7 @@
         app:layout_constraintVertical_bias="0.666" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/continuecon"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:background="@color/white"
