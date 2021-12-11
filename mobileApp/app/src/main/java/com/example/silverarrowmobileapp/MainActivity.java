@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseFirestore =  FirebaseFirestore.getInstance();;
-
+        startActivity(new Intent(MainActivity.this, matchesActivity.class));
         findViewById(R.id.buttoncontinue).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -10,13 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SilverArrowMobileApp">
         <activity
+            android:name=".GoMatches"
+            android:exported="false" />
+        <activity
             android:name=".NameSurnameActivity"
             android:exported="false" />
         <activity
             android:name=".phoneAddressMainActivity"
             android:exported="false" />
         <activity
-            android:name=".showCars"
+            android:name=".matchesActivity"
             android:exported="false" />
         <activity
             android:name=".SignUpActivity"
