@@ -10,29 +10,32 @@
         android:id="@+id/textView"
         android:layout_width="219dp"
         android:layout_height="42dp"
-        android:layout_marginTop="120dp"
         android:gravity="center"
         android:text="Welcome"
-        android:textSize="30dp"
+        android:textColor="@color/purple"
+        android:textSize="40dp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.453"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.323" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:text="Sign in or create a free account to continue..."
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <LinearLayout
-        android:layout_width="410dp"
-        android:layout_height="510dp"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,8 +49,8 @@
             android:layout_width="300dp"
             android:layout_height="44dp"
             android:layout_marginStart="36dp"
-            android:layout_marginTop="64dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginTop="46dp"
+            android:layout_marginBottom="18dp"
             android:ems="10"
             android:hint="E-mail"
             android:inputType="textPersonName"
@@ -69,8 +72,8 @@
             android:id="@+id/button"
             android:layout_width="294dp"
             android:layout_height="60dp"
-            android:layout_marginTop="24dp"
             android:layout_marginStart="36dp"
+            android:layout_marginTop="24dp"
             android:drawableLeft="@drawable/key"
             android:onClick="login"
             android:text="Sıgn ın " />
@@ -79,8 +82,19 @@
             android:id="@+id/textView3"
             android:layout_width="138dp"
             android:layout_height="40dp"
+            android:layout_marginStart="200dp"
             android:text="Create New Account"
-            android:textStyle="bold"
-            android:layout_marginStart="200dp"/>
+            android:textStyle="bold" />
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="308dp"
+        android:layout_marginBottom="56dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/header_top" />
 </androidx.constraintlayout.widget.ConstraintLayout>
