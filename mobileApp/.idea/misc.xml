@@ -8,9 +8,10 @@
         <entry key="..\:/Users/HP/Documents/GitHub/Starhack-Hackathon/mobileApp/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/HP/Documents/GitHub/Starhack-Hackathon/mobileApp/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/HP/Documents/GitHub/Starhack-Hackathon/mobileApp/app/src/main/res/drawable/ic_baseline_login_24.xml" value="0.21614583333333334" />
-        <entry key="..\:/Users/HP/Documents/GitHub/Starhack-Hackathon/mobileApp/app/src/main/res/layout/activity_login.xml" value="0.16927083333333334" />
-        <entry key="..\:/Users/HP/Documents/GitHub/Starhack-Hackathon/mobileApp/app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="..\:/Users/HP/Documents/GitHub/Starhack-Hackathon/mobileApp/app/src/main/res/layout/activity_sign_up.xml" value="0.16927083333333334" />
+        <entry key="..\:/Users/HP/Documents/GitHub/Starhack-Hackathon/mobileApp/app/src/main/res/drawable/key.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/HP/Documents/GitHub/Starhack-Hackathon/mobileApp/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/HP/Documents/GitHub/Starhack-Hackathon/mobileApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/HP/Documents/GitHub/Starhack-Hackathon/mobileApp/app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
       </map>
     </option>
   </component>
