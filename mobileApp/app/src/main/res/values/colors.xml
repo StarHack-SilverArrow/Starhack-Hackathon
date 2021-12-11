@@ -7,4 +7,16 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="layout">#483F51B5</color>
+    <color name="car1">#0FEAFA</color>
+    <color name="car2">#ED678C</color>
+    <color name="car3">#97B4D1</color>
+    <color name="buttonblack">#8A000000</color>
+    <color name="textred">#d66c88</color>
+    <color name="purple">#DC7555C0</color>
+    <color name="rede">#F75139</color>
+    <color name="green">#4AB472</color>
+    <color name="dpurple">#443173</color>
+    <color name="blue">#9cc6ff</color>
+
 </resources>
