@@ -1,6 +1,6 @@
 # Starhack-Hackathon - Silver Arrow Team
 
-#### SPARKLE
+#### ✨ SPARKLE ✨
 
 
 <p> A mobile application that increases <strong>experience sharing</strong>.
