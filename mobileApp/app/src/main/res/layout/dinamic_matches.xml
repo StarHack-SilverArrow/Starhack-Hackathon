@@ -35,4 +35,5 @@ android:orientation="vertical">
             android:layout_marginRight="10dp"
             android:text="don't matches" />
     </LinearLayout>
+
 </LinearLayout>

@@ -10,10 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SilverArrowMobileApp">
         <activity
-            android:name=".ApplicationTrackingActivity"
-            android:exported="false" />
-        <activity
-            android:name=".SetUpCarActivity"
+            android:name=".ProfileActivity"
+
             android:exported="false" />
         <activity
             android:name=".GoMatches"
@@ -42,7 +40,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>

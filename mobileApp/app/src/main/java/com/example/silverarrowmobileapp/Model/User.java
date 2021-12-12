@@ -3,6 +3,8 @@ package com.example.silverarrowmobileapp.Model;
 import java.util.List;
 
 public class User {
+    public  String uuid; // Public olmasinin nedeni butun constructerlarda ektra bir ekleme yapmak
+    // zorundada kalmamak icin, bu yuzden finalde olamaz cunku finaller obje yartilmadan once belirlenmeli.
     private final String name;
     private final String surname;
     private final String mail;
