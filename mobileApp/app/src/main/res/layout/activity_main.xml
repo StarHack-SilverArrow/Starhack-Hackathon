@@ -24,7 +24,7 @@
         android:background="@drawable/firstscreenbutton"
         android:drawableRight="@drawable/ic_baseline_arrow_circle_right_24"
         android:gravity="center"
-        android:text="Continue"
+        android:text="sıgn up"
         android:textColor="@color/dpurple"
         android:textSize="14dp"
         android:textStyle="bold"
@@ -89,11 +89,16 @@
 
     <Button
         android:id="@+id/MainLoginGoButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/firstscreenbutton"
+        android:text="logın"
+        android:textColor="@color/dpurple"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/buttoncontinue"
+        app:layout_constraintHorizontal_bias="0.113"
         app:layout_constraintStart_toStartOf="@+id/continuecon"
         app:layout_constraintTop_toBottomOf="@+id/gifImageView" />
 

@@ -35,22 +35,22 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="420dp"
+        android:layout_height="317dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintVertical_bias="0.087">
 
         <EditText
             android:id="@+id/editTextTextPersonName"
             android:layout_width="300dp"
             android:layout_height="44dp"
-            android:layout_marginStart="36dp"
             android:layout_marginTop="46dp"
             android:layout_marginBottom="18dp"
+            android:layout_gravity="center"
             android:ems="10"
             android:hint="E-mail"
             android:inputType="textPersonName"
@@ -62,7 +62,7 @@
             android:id="@+id/editTextNumberPassword"
             android:layout_width="300dp"
             android:layout_height="44dp"
-            android:layout_marginStart="36dp"
+            android:layout_gravity="center"
             android:ems="10"
             android:hint="Password"
             android:inputType="text"
@@ -74,18 +74,11 @@
             android:id="@+id/SignInLoginButton"
             android:layout_width="294dp"
             android:layout_height="60dp"
-            android:layout_marginStart="36dp"
+            android:layout_gravity="center"
             android:layout_marginTop="24dp"
             android:drawableLeft="@drawable/key"
             android:text="Sıgn ın " />
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="138dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="200dp"
-            android:text="Create New Account"
-            android:textStyle="bold" />
     </LinearLayout>
 
     <ImageView
@@ -98,4 +91,20 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/header_top" />
+
+    <Button
+        android:id="@+id/back2"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/forwardbackground"
+        android:drawableRight="@drawable/ic_baseline_arrow_back_24"
+        android:gravity="left"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.924"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

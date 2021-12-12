@@ -17,11 +17,12 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.annotations.NotNull;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+
+import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
@@ -42,6 +43,15 @@ public class LoginActivity extends AppCompatActivity {
                 Login(mail.getText().toString(), password.getText().toString());
             }
         });
+        findViewById(R.id.SignInLoginButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this, GoMatches.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
 
     public void Login(String mail, String password) {

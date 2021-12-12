@@ -38,6 +38,16 @@ public class SignUpActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 createAccount(mail.getText().toString(), password.getText().toString());
+                Intent intent = new Intent(SignUpActivity.this, NameSurnameActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.back).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(SignUpActivity.this, MainActivity.class);
+                startActivity(intent);
             }
         });
     }

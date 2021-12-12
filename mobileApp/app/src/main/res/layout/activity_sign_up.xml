@@ -89,7 +89,7 @@
         android:layout_width="60dp"
         android:layout_height="wrap_content"
         android:background="@drawable/forwardbackground"
-        android:drawableRight="@drawable/ic_baseline_forward_24"
+        android:drawableRight="@drawable/ic_baseline_arrow_forward_24"
         android:gravity="right"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -98,5 +98,21 @@
         app:layout_constraintTop_toTopOf="@+id/linearLayout2"
         app:layout_constraintVertical_bias="0.671"
         tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/forwardbackground"
+        android:drawableRight="@drawable/ic_baseline_arrow_back_24"
+        android:gravity="left"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.102"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.671"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
