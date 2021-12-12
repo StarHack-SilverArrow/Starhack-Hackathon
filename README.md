@@ -6,7 +6,7 @@
 <p> A mobile application that increases <strong>experience sharing</strong>.
 </p>
 
-<p>A platform for sharing tools and experiences!
+<p>A platform for sharing cars and experiences!
 </p>
 
 #### FEATURES:
