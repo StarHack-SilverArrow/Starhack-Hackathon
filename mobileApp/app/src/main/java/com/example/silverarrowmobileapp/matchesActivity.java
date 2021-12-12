@@ -46,15 +46,14 @@ public class matchesActivity extends AppCompatActivity {
                             0,
                             (List<String>) document.get("frequentlylocation")));
                 }
-               // System.out.println(matchedUsers);
-                /*for (User user : matchedUsers) {
+                System.out.println(matchedUsers);
+                for (User user : matchedUsers) {
                     Match match = new Match(user.getFrequentlyLocations(),SingletonStorage.mainUser.getFrequentlyLocations());
-                    System.out.println(match.getMatchPersent());
+                    System.out.println(match.getMatchPersent()*100);
                     if (match.getMatchPersent() > 0)
-                        matchedUsers.add(user);
-
-                }*/
-                //System.out.println(matches);
+                        matches.add(user);
+                }
+                System.out.println(matches);
             }
         });
     }

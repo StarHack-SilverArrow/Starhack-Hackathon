@@ -4,16 +4,29 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d61745cc-8ae0-4bfd-85ff-619bc0317e8d" name="Default Changelist" comment="" />
+    <list default="true" id="d204181e-6b52-4da0-b34b-23240d4fc1a5" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
-  <component name="ProjectId" id="228V7jtaLPqS1wIGkBKnkNhvfpa" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="22A42RkwHvRgSfiuDFJAscCFh9B" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -21,17 +34,16 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/mobileApp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../RezerveSepeti" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d61745cc-8ae0-4bfd-85ff-619bc0317e8d" name="Default Changelist" comment="" />
-      <created>1639219035852</created>
+      <changelist id="d204181e-6b52-4da0-b34b-23240d4fc1a5" name="Default Changelist" comment="" />
+      <created>1639266850621</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1639219035852</updated>
+      <updated>1639266850621</updated>
     </task>
     <servers />
   </component>
@@ -45,6 +57,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
