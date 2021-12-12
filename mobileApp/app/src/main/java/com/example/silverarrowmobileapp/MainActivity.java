@@ -41,15 +41,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseFirestore =  FirebaseFirestore.getInstance();
-        /*
         Intent intent = new Intent(MainActivity.this, ApplicationTrackingActivity.class);
         startActivity(intent);
-        */
 
         findViewById(R.id.buttoncontinue).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this,SignUpActivity.class));
+                finish();
+            }
+        });
+        findViewById(R.id.MainLoginGoButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,LoginActivity.class));
                 finish();
             }
         });

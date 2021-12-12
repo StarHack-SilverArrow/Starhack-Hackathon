@@ -1,5 +1,7 @@
 package com.example.silverarrowmobileapp;
 
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 
 import com.example.silverarrowmobileapp.Model.Match;
@@ -21,30 +23,34 @@ public class MatchGenerator {
 
     //TODO: i can change user to less user model
     public static List<User> getAllMatch() {
-        CollectionReference collectionReference = FirebaseFirestore.getInstance().collection("user");
+        CollectionReference collectionReference = FirebaseFirestore.getInstance().collection("users");
         String uuid = FirebaseAuth.getInstance().getUid();
         if (uuid == null) return new ArrayList<>();
         List<User> matchedUsers = new ArrayList<>();
         //TODO: Add filtering
         collectionReference.get().addOnCompleteListener(task -> {
-            if (task.isSuccessful())
+            if (task.isSuccessful()) {
                 // Get all users in same location
                 for (QueryDocumentSnapshot document : task.getResult()) {
-                    matchedUsers.add(new User(document.get("name").toString(),
-                            document.get("username").toString(),
-                            document.get("mail").toString(),
-                            document.get("phone").toString(),
-                            document.get("birthday").toString(),
-                            document.get("location").toString(),
-                            Integer.parseInt(document.get("point").toString()),
-                            (List<String>) document.get("frequentlyLocations")));
+                    matchedUsers.add(new User((String) document.get("name"),
+                            (String)document.get("surname"),
+                            "(String)document.get()",
+                            "(String)document.get()",
+                            "String)document.get()",
+                            (String)document.get("location"),
+                            0,
+                            (List<String>) document.get("frequentlylocation")));
                 }
+            }
         });
+        System.out.println(matchedUsers.size());
         //Userlar olusturulmadan matchler olustulabilir
         for (User user : matchedUsers) {
-            Match match = new Match(user.getFrequentlyLocations(), MainActivity.mainUser.getFrequentlyLocations());
-            if (match.getMatchPersent() > .4f)
+            System.out.print(user.getFrequentlyLocations());
+            Match match = new Match(user.getFrequentlyLocations(),SingletonStorage.mainUser.getFrequentlyLocations());
+            /*if (match.getMatchPersent() > .4f)
                 matchedUsers.add(user);
+*/
         }
         return matchedUsers;
     }

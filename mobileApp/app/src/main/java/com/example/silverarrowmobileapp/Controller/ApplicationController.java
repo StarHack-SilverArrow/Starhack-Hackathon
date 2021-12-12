@@ -1,25 +1,29 @@
-package com.example.silverarrowmobileapp;
+package com.example.silverarrowmobileapp.Controller;
 
 import androidx.annotation.Nullable;
 
 import com.example.silverarrowmobileapp.Model.Application;
+import com.example.silverarrowmobileapp.SingletonStorage;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.EventListener;
+import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.firestore.SetOptions;
 
 public class ApplicationController {
     //Basvuru kontrolcusu
-    private SingletonStorage singletonStorage;
+    private FirebaseFirestore firestore;
+    private FirebaseAuth firebaseAuth;
 
     private int lastApplicationCount;
 
     public ApplicationController() {
-        singletonStorage = SingletonStorage.getInstance();
+        firestore = FirebaseFirestore.getInstance();
 
-        singletonStorage.getFirestore().collection("user").document(singletonStorage.getFirebaseAuth().getUid()).addSnapshotListener(new EventListener<DocumentSnapshot>() {
+        firestore.collection("user").document(firebaseAuth.getUid()).addSnapshotListener(new EventListener<DocumentSnapshot>() {
             @Override
             public void onEvent(@Nullable DocumentSnapshot value, @Nullable FirebaseFirestoreException error) {
                 if (error != null) {
@@ -44,7 +48,7 @@ public class ApplicationController {
         } else {
             app.setAccepted(false);
         }
-        DocumentReference applicationReferance = singletonStorage.getFirestore().
+        DocumentReference applicationReferance = firestore.
                 collection("application").document(application.getApplicationId());
         applicationReferance.set(application, SetOptions.merge()).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override

@@ -11,6 +11,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
@@ -35,34 +37,24 @@ public class SignUpActivity extends AppCompatActivity {
         goOn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 createAccount(mail.getText().toString(), password.getText().toString());
-                Intent intent = new Intent(SignUpActivity.this, NameSurnameActivity.class);
-                startActivity(intent);
             }
         });
     }
 
     private void createAccount(String mail, String password) {
-
-        firebaseAuth.createUserWithEmailAndPassword(mail, password)
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            // Sign in success, update UI with the signed-in user's information
-                            FirebaseUser user = firebaseAuth.getCurrentUser();
-                            // [START create_user_with_email]
-                            Toast.makeText(SignUpActivity.this, firebaseAuth.getUid(),
-                                    Toast.LENGTH_SHORT).show();
-
-                        } else {
-                            // If sign in fails, display a message to the user.
-                            Toast.makeText(SignUpActivity.this, "Authentication failed.",
-                                    Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                });
+        Toast.makeText(SignUpActivity.this,"begin",Toast.LENGTH_LONG).show();
+        firebaseAuth.createUserWithEmailAndPassword(mail, password).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
+            @Override
+            public void onSuccess(AuthResult authResult) {
+                Toast.makeText(SignUpActivity.this,"start",Toast.LENGTH_LONG).show();
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Toast.makeText(SignUpActivity.this,e.getLocalizedMessage(),Toast.LENGTH_LONG).show();
+            }
+        });
 
     }
     

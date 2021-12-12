@@ -6,10 +6,7 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 public class SingletonStorage {
-    private static FirebaseAuth firebaseAuth;
-    private static FirebaseFirestore firestore;
-    private static FirebaseUser firebaseUser;
-    private static User mainUser;
+    public static User mainUser;
     private static SingletonStorage instance;
 
 
@@ -19,30 +16,15 @@ public class SingletonStorage {
         return instance;
     }
 
-    public static void SetUser() {
-
-    }
-
-    public void SetFirebase() {
-        firebaseAuth = FirebaseAuth.getInstance();
-        firestore = FirebaseFirestore.getInstance();
+    public void SetUser(User mainUser) {
+        this.mainUser = mainUser;
     }
 
     private SingletonStorage() {
 
     }
 
-    public FirebaseAuth getFirebaseAuth() {
-        return firebaseAuth;
-    }
-
-    public FirebaseFirestore getUser() {
-        return firestore;
-    }
-
     public User getMainUser() {
         return mainUser;
     }
-
-    public FirebaseFirestore getFirestore() {return firestore;}
 }
