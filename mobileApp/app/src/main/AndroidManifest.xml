@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SilverArrowMobileApp">
         <activity
+            android:name=".SetUpCarActivity"
+            android:exported="false" />
+        <activity
             android:name=".ProfileActivity"
 
             android:exported="false" />

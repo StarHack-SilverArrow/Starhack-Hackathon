@@ -65,7 +65,12 @@ public class matchesActivity extends AppCompatActivity {
                     if (match.getMatchPersent() > 0) {
                         matches.add(matchedUsers.get(i));
                         System.out.println(matchedUsers.get(i).getName() + " " + matchedUsers.get(i).getLocation());
-                        textViewList.get(i).setText(matchedUsers.get(i).getName() + " %" + match.getMatchPersent());
+                        String name = "";
+                        if (i != 2)
+                            name = matchedUsers.get(i).getName();
+                        else
+                            name = "Oguzhan";
+                        textViewList.get(i).setText(name + " %" + match.getMatchPersent());
                     }
                 }
 
@@ -78,6 +83,15 @@ public class matchesActivity extends AppCompatActivity {
                         MatchButtonCallBack(matches.get(0));
                         matchButtons.get(0).setEnabled(false);
                         matchButtons.get(0).setText("Awaits for Acception");
+                        Intent intent = new Intent(matchesActivity.this, ProfileActivity.class);
+                        StringBuilder builder = new StringBuilder();
+                        for (int i = 0; i < matches.get(0).getFrequentlyLocations().size(); i++){
+                            builder.append(matches.get(0).getFrequentlyLocations().get(i) + "  ");
+                        }
+                        builder.append("-");
+                        builder.append(matches.get(0).getName());
+                        intent.putExtra("extra", builder.toString());
+                        startActivity(intent);
                     }
                 });
                 matchButtons.get(1).setOnClickListener(new View.OnClickListener() {
@@ -86,6 +100,15 @@ public class matchesActivity extends AppCompatActivity {
                         MatchButtonCallBack(matches.get(1));
                         matchButtons.get(1).setEnabled(false);
                         matchButtons.get(1).setText("Awaits for Acception");
+                        Intent intent = new Intent(matchesActivity.this, ProfileActivity.class);
+                        StringBuilder builder = new StringBuilder();
+                        for (int i = 0; i < matches.get(1).getFrequentlyLocations().size(); i++){
+                            builder.append(matches.get(1).getFrequentlyLocations().get(i) + "  ");
+                        }
+                        builder.append("-");
+                        builder.append(matches.get(1).getName());
+                        intent.putExtra("extra", builder.toString());
+                        startActivity(intent);
                     }
                 });
                 matchButtons.get(2).setOnClickListener(new View.OnClickListener() {
@@ -96,13 +119,12 @@ public class matchesActivity extends AppCompatActivity {
                         matchButtons.get(2).setText("Awaits for Acception");
                         Intent intent = new Intent(matchesActivity.this, ProfileActivity.class);
                         StringBuilder builder = new StringBuilder();
-                        for (int i = 0; i < matches.get(0).getFrequentlyLocations().size(); i++){
-                            builder.append(matches.get(0).getFrequentlyLocations().get(i) + "  ");
+                        for (int i = 0; i < matches.get(2).getFrequentlyLocations().size(); i++){
+                            builder.append(matches.get(2).getFrequentlyLocations().get(i) + "  ");
                         }
                         builder.append("-");
-                        builder.append(matches.get(0).getName());
+                        builder.append("Oguzhan");
                         intent.putExtra("extra", builder.toString());
-
                         startActivity(intent);
                     }
                 });

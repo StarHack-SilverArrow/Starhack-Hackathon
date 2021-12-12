@@ -13,7 +13,7 @@ public class SetUpCarActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_set_up_car);
 
-        findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.setupCarSave).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(SetUpCarActivity.this, GoMatches.class);

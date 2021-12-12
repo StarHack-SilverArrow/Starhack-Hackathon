@@ -41,8 +41,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Login(mail.getText().toString(), password.getText().toString());
-                Intent intent = new Intent(LoginActivity.this, GoMatches.class);
-                startActivity(intent);
+
             }
         });
 
@@ -66,7 +65,8 @@ public class LoginActivity extends AppCompatActivity {
                                 (String)documentSnapshot.get("location"),
                                 (Integer.parseInt((String) documentSnapshot.get("point"))),
                                 (List<String>) documentSnapshot.get("frequentlylocation"));
-                        startActivity(new Intent(LoginActivity.this, matchesActivity.class));
+                        Intent intent = new Intent(LoginActivity.this, GoMatches.class);
+                        startActivity(intent);
                     }
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override
@@ -107,36 +107,3 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 }
-/*
-Toast.makeText(LoginActivity.this, FirebaseAuth.getInstance().getUid(), Toast.LENGTH_SHORT).show();
-        FirebaseFirestore.getInstance().collection("users").
-        document(FirebaseAuth.getInstance().getUid()).get().
-        addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
-@Override
-public void onSuccess(DocumentSnapshot documentSnapshot) {
-        //Toast.makeText(LoginActivity.this,(String)documentSnapshot.get((String) documentSnapshot.get("name")), Toast.LENGTH_SHORT).show();
-        String name = (String) documentSnapshot.get("name");
-        Toast.makeText(LoginActivity.this,name, Toast.LENGTH_SHORT).show();
-
-
-                            /*SingletonStorage.getInstance().SetUser(
-                                    new User(documentSnapshot.get("name"),
-                                            documentSnapshot.get("username").toString(),
-                                            documentSnapshot.get("mail").toString(),
-                                            documentSnapshot.get("phone").toString(),
-                                            documentSnapshot.get("birthday").toString(),
-                                            documentSnapshot.get("location").toString(),
-                                            Integer.parseInt(documentSnapshot.get("point").toString()),
-                                            (List<String>) documentSnapshot.get("frequentlyLocations")));
-
-                            startActivity(new Intent(LoginActivity.this, matchesActivity.class));
-
-        }
-        }).addOnFailureListener(new OnFailureListener() {
-@Override
-public void onFailure(@NonNull Exception e) {
-        Toast.makeText(LoginActivity.this,"name", Toast.LENGTH_SHORT).show();
-        }
-        });
-        }
-        */
