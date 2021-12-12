@@ -16,10 +16,9 @@ public class ProfileActivity extends AppCompatActivity {
 
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
-            String name = extras.getString("name");
-            String locations = extras.getString("location");
-            ((TextView)findViewById(R.id.profileName)).setText(name);
-            ((TextView)findViewById(R.id.ProfileLocations)).setText(locations);
+            String[] extraString = extras.getString("extra").split("-");
+            ((TextView)findViewById(R.id.profileName)).setText(extraString[1]);
+            ((TextView)findViewById(R.id.ProfileLocations)).setText(extraString[0]);
             //The key argument here must match that used in the other activity
         }
 

@@ -23,7 +23,6 @@
     <LinearLayout
         android:id="@+id/testId"
         android:layout_width="match_parent"
-
         android:layout_height="500dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -59,13 +58,11 @@
             android:id="@+id/secondButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             android:text="matches" />
 
         <TextView
             android:id="@+id/thirthmatch"
             android:layout_width="match_parent"
-
             android:layout_height="40dp"
             android:paddingLeft="10dp"
             android:text="TextView" />
@@ -74,7 +71,6 @@
             android:id="@+id/thirthButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             android:text="matches" />
 
     </LinearLayout>
@@ -85,7 +81,7 @@
         android:layout_height="58dp"
         android:background="@drawable/firstscreenbutton"
         android:gravity="center"
-        android:text="Apply"
+        android:text="Send request"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"

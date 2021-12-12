@@ -16,13 +16,10 @@ public class ApplicationTrackingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_application_tracking);
-        List<User> Tracking = MatchGenerator.getAllMatch();
         View track = findViewById(R.id.trackid);
         TextView vıew = (TextView) track.findViewById(R.id.titlename);
         TextView vıew1 = (TextView) track.findViewById(R.id.name);
 
-        vıew.setText("Beyda");
-        vıew1.setText("054244444444");
 
     }
 }

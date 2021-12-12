@@ -41,16 +41,10 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Login(mail.getText().toString(), password.getText().toString());
-            }
-        });
-        findViewById(R.id.SignInLoginButton).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
                 Intent intent = new Intent(LoginActivity.this, GoMatches.class);
                 startActivity(intent);
             }
         });
-
 
     }
 

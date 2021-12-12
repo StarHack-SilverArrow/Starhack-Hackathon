@@ -95,12 +95,13 @@ public class matchesActivity extends AppCompatActivity {
                         matchButtons.get(2).setEnabled(false);
                         matchButtons.get(2).setText("Awaits for Acception");
                         Intent intent = new Intent(matchesActivity.this, ProfileActivity.class);
-                        intent.putExtra("name", matches.get(0).getName());
                         StringBuilder builder = new StringBuilder();
                         for (int i = 0; i < matches.get(0).getFrequentlyLocations().size(); i++){
-                            builder.append(matches.get(0).getFrequentlyLocations().get(i));
+                            builder.append(matches.get(0).getFrequentlyLocations().get(i) + "  ");
                         }
-                        intent.putExtra("name", builder.toString());
+                        builder.append("-");
+                        builder.append(matches.get(0).getName());
+                        intent.putExtra("extra", builder.toString());
 
                         startActivity(intent);
                     }

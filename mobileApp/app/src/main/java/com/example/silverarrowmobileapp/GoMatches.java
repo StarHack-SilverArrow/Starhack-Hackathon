@@ -18,7 +18,7 @@ public class GoMatches extends AppCompatActivity {
         findViewById(R.id.button6).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(GoMatches.this, Match.class);
+                Intent intent = new Intent(GoMatches.this, matchesActivity.class);
                 startActivity(intent);
             }
         });
