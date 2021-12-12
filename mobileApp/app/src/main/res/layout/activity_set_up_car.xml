@@ -6,20 +6,37 @@
     android:layout_height="match_parent"
     tools:context=".SetUpCarActivity">
 
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="match_parent"
+        android:layout_height="232dp"
+        android:scaleType="center"
+        android:src="@drawable/Electric"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.032" />
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="700dp"
+        android:layout_height="473dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
         <TextView
             android:id="@+id/textView17"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Model"
+            margin android:layout_marginBottom="4dp"
+            android:layout_marginStart="10dp"
             android:textSize="20dp" />
 
         <EditText
@@ -27,30 +44,43 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            margin android:layout_marginBottom="4dp"
+            android:layout_marginStart="10dp"
             android:inputType="textPersonName" />
 
         <TextView
             android:id="@+id/textView18"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Year" />
+            android:text="Year"
+            android:textSize="23dp"
+            margin android:layout_marginBottom="4dp"
+            android:layout_marginStart="10dp" />
 
         <EditText
             android:id="@+id/editTextNumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:textSize="24dp"
+            margin android:layout_marginBottom="4dp"
+            android:layout_marginStart="10dp"
             android:inputType="number" />
 
         <TextView
             android:id="@+id/textView19"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Type" />
+            android:text="Type"
+            android:textSize="24dp"
+            margin android:layout_marginBottom="4dp"
+            android:layout_marginStart="10dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="60dp"
+            margin android:layout_marginBottom="4dp"
+            android:layout_marginStart="10dp"
             android:orientation="horizontal">
 
             <RadioButton
@@ -58,6 +88,12 @@
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:text="Hybrid" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
 
             <RadioButton
                 android:id="@+id/radioButton"
@@ -82,4 +118,5 @@
             android:inputType="number" />
 
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
