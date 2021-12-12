@@ -40,12 +40,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         firebaseAuth = FirebaseAuth.getInstance();
-        firebaseFirestore =  FirebaseFirestore.getInstance();;
-        startActivity(new Intent(MainActivity.this, matchesActivity.class));
+        firebaseFirestore =  FirebaseFirestore.getInstance();
         findViewById(R.id.buttoncontinue).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this,SignUpActivity.class));
+                finish();
+            }
+        });
+        findViewById(R.id.MainLoginGoButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,LoginActivity.class));
                 finish();
             }
         });

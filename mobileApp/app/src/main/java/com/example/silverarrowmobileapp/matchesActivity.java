@@ -5,34 +5,65 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.example.silverarrowmobileapp.Model.Match;
 import com.example.silverarrowmobileapp.Model.User;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class matchesActivity extends AppCompatActivity {
-
+    private List<User> matches = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_matches);
-        List<User> matches = MatchGenerator.getAllMatch();
-        View template = findViewById(R.id.testId);
-        TextView vıew = (TextView) template.findViewById(R.id.dummy);
-        TextView vıew1 = (TextView) template.findViewById(R.id.textView15);
-        TextView vıew2 = (TextView) template.findViewById(R.id.textView14);
-        TextView vıew3 = (TextView) template.findViewById(R.id.textView13);
-        TextView vıew4 = (TextView) template.findViewById(R.id.textView12);
-        ArrayList<TextView> rootView = new ArrayList<TextView>();
-        rootView.add(vıew);
-        rootView.add(vıew1);
-        rootView.add(vıew2);
-        rootView.add(vıew3);
-        rootView.add(vıew4);
-        for (int i=0;i<5;i++) {
-            rootView.get(i).setText(matches.get(i).getName());
-        }
+        GetAllMatches();
+    }
+
+
+    public void GetAllMatches() {
+        CollectionReference collectionReference = FirebaseFirestore.getInstance().collection("users");
+        String uuid = FirebaseAuth.getInstance().getUid();
+        List<User> matchedUsers = new ArrayList<>();
+        //TODO: Add filtering
+        collectionReference.whereEqualTo("location", SingletonStorage.mainUser.getLocation()).get().addOnCompleteListener(task -> {
+            if (task.isSuccessful()) {
+                for (QueryDocumentSnapshot document : task.getResult()) {
+                    System.out.println((String) document.get("uuid"));
+                    if (((String) document.get("uuid")) != null && ((String) document.get("uuid")).equals(FirebaseAuth.getInstance().getUid())) continue;
+                    matchedUsers.add(new User((String) document.get("name"),
+                            (String) document.get("surname"),
+                            "(String)document.get()",
+                            "(String)document.get()",
+                            "String)document.get()",
+                            (String) document.get("location"),
+                            0,
+                            (List<String>) document.get("frequentlylocation")));
+                }
+               // System.out.println(matchedUsers);
+                /*for (User user : matchedUsers) {
+                    Match match = new Match(user.getFrequentlyLocations(),SingletonStorage.mainUser.getFrequentlyLocations());
+                    System.out.println(match.getMatchPersent());
+                    if (match.getMatchPersent() > 0)
+                        matchedUsers.add(user);
+
+                }*/
+                //System.out.println(matches);
+            }
+        });
+    }
+
+
+    private void InitMatchUI() {
+
+
 
     }
+
 }

@@ -1,21 +1,25 @@
-package com.example.silverarrowmobileapp;
+package com.example.silverarrowmobileapp.Controller;
 
 import androidx.annotation.Nullable;
 
+import com.example.silverarrowmobileapp.SingletonStorage;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.EventListener;
+import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 
 public class RezervationController {
 
-    private SingletonStorage singletonStorage;
+    private FirebaseFirestore firestore;
+    private FirebaseAuth firebaseAuth;
 
     private int lastRezCount;
 
     public RezervationController() {
-        singletonStorage = SingletonStorage.getInstance();
 
-        singletonStorage.getFirestore().collection("user").document(singletonStorage.getFirebaseAuth().getUid()).addSnapshotListener(new EventListener<DocumentSnapshot>() {
+
+        firestore.collection("user").document(firebaseAuth.getUid()).addSnapshotListener(new EventListener<DocumentSnapshot>() {
             @Override
             public void onEvent(@Nullable DocumentSnapshot value, @Nullable FirebaseFirestoreException error) {
                 if (error != null) {
