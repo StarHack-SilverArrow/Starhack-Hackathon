@@ -8,20 +8,24 @@
         <entry key="..\:/Users/HP/Documents/GitHub/Starhack-Hackathon/mobileApp/app/src/main/res/drawable/forwardbackground.xml" value="0.16614583333333333" />
         <entry key="..\:/Users/HP/Documents/GitHub/Starhack-Hackathon/mobileApp/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/HP/Documents/GitHub/Starhack-Hackathon/mobileApp/app/src/main/res/drawable/ic_baseline_forward_24.xml" value="0.16614583333333333" />
+        <entry key="..\:/Users/HP/Documents/GitHub/Starhack-Hackathon/mobileApp/app/src/main/res/drawable/ic_baseline_lens1.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/HP/Documents/GitHub/Starhack-Hackathon/mobileApp/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/HP/Documents/GitHub/Starhack-Hackathon/mobileApp/app/src/main/res/drawable/ic_baseline_login_24.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/HP/Documents/GitHub/Starhack-Hackathon/mobileApp/app/src/main/res/drawable/ic_baseline_panorama_lens2.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/HP/Documents/GitHub/Starhack-Hackathon/mobileApp/app/src/main/res/drawable/key.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/HP/Documents/GitHub/Starhack-Hackathon/mobileApp/app/src/main/res/layout/activity_application_tracking.xml" value="0.18" />
         <entry key="..\:/Users/HP/Documents/GitHub/Starhack-Hackathon/mobileApp/app/src/main/res/layout/activity_go_matches.xml" value="0.1859375" />
-        <entry key="..\:/Users/HP/Documents/GitHub/Starhack-Hackathon/mobileApp/app/src/main/res/layout/activity_login.xml" value="0.22" />
-        <entry key="..\:/Users/HP/Documents/GitHub/Starhack-Hackathon/mobileApp/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/Users/HP/Documents/GitHub/Starhack-Hackathon/mobileApp/app/src/main/res/layout/activity_matches.xml" value="0.2" />
+        <entry key="..\:/Users/HP/Documents/GitHub/Starhack-Hackathon/mobileApp/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/HP/Documents/GitHub/Starhack-Hackathon/mobileApp/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/HP/Documents/GitHub/Starhack-Hackathon/mobileApp/app/src/main/res/layout/activity_matches.xml" value="0.16" />
         <entry key="..\:/Users/HP/Documents/GitHub/Starhack-Hackathon/mobileApp/app/src/main/res/layout/activity_name.xml" value="0.15" />
-        <entry key="..\:/Users/HP/Documents/GitHub/Starhack-Hackathon/mobileApp/app/src/main/res/layout/activity_name_surname.xml" value="0.18" />
-        <entry key="..\:/Users/HP/Documents/GitHub/Starhack-Hackathon/mobileApp/app/src/main/res/layout/activity_phone_address_main.xml" value="0.13" />
+        <entry key="..\:/Users/HP/Documents/GitHub/Starhack-Hackathon/mobileApp/app/src/main/res/layout/activity_name_surname.xml" value="0.2" />
+        <entry key="..\:/Users/HP/Documents/GitHub/Starhack-Hackathon/mobileApp/app/src/main/res/layout/activity_phone_address_main.xml" value="0.2" />
+        <entry key="..\:/Users/HP/Documents/GitHub/Starhack-Hackathon/mobileApp/app/src/main/res/layout/activity_set_up_car.xml" value="0.2" />
         <entry key="..\:/Users/HP/Documents/GitHub/Starhack-Hackathon/mobileApp/app/src/main/res/layout/activity_show_cars.xml" value="0.22" />
-        <entry key="..\:/Users/HP/Documents/GitHub/Starhack-Hackathon/mobileApp/app/src/main/res/layout/activity_sign_up.xml" value="0.16" />
+        <entry key="..\:/Users/HP/Documents/GitHub/Starhack-Hackathon/mobileApp/app/src/main/res/layout/activity_sign_up.xml" value="0.2" />
         <entry key="..\:/Users/HP/Documents/GitHub/Starhack-Hackathon/mobileApp/app/src/main/res/layout/dinamic_matches.xml" value="0.22" />
-
+        <entry key="..\:/Users/HP/Documents/GitHub/Starhack-Hackathon/mobileApp/app/src/main/res/layout/dinamic_tracking.xml" value="0.2" />
       </map>
     </option>
   </component>

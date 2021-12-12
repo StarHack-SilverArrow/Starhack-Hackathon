@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SilverArrowMobileApp">
         <activity
+            android:name=".ApplicationTrackingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SetUpCarActivity"
+            android:exported="false" />
+        <activity
             android:name=".GoMatches"
             android:exported="false" />
         <activity
